@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all pod
 
 all:
 	xcodebuild -workspace StargateExample.xcworkspace \
@@ -6,3 +6,5 @@ all:
 	xcodebuild -workspace StargateExample.xcworkspace \
 		-scheme StargateExample build
 
+pod:
+	pod install --no-repo-update
