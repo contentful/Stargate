@@ -87,6 +87,8 @@
 		A1C947B71AF02BBA00783952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1C947B91AF02BBA00783952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1C947BC1AF02BBA00783952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C947D11AF0363A00783952 /* StargateExample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "StargateExample WatchKit Extension.entitlements"; path = "../StargateExample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		A1C947D21AF0365000783952 /* StargateExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = StargateExample.entitlements; path = ../../StargateExample.entitlements; sourceTree = "<group>"; };
 		C7FCBA3F3D2B2531EC93E166 /* Pods_Stargate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stargate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C818D7FA0F2F0862588D8976 /* Pods_StargateExample_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargateExample_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				A1C947671AF02AAA00783952 /* Info.plist */,
+				A1C947D21AF0365000783952 /* StargateExample.entitlements */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				A1C947931AF02B6100783952 /* Images.xcassets */,
 				A1C947911AF02B6100783952 /* InterfaceController.swift */,
 				A1C947901AF02B6100783952 /* Info.plist */,
+				A1C947D11AF0363A00783952 /* StargateExample WatchKit Extension.entitlements */,
 			);
 			path = "WatchKit Extension";
 			sourceTree = "<group>";
@@ -343,9 +347,21 @@
 				TargetAttributes = {
 					A1C947621AF02AAA00783952 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RWJ5E97L7R;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A1C9478C1AF02B6100783952 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RWJ5E97L7R;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A1C947961AF02B6100783952 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -722,9 +738,13 @@
 			baseConfigurationReference = 707D2F77961D07B4BC14FB4D /* Pods-StargateExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StargateExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Phone App/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -733,9 +753,13 @@
 			baseConfigurationReference = 2A1549CFB5596122772AE6C7 /* Pods-StargateExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StargateExample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Phone App/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -743,6 +767,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A737CF791F589DA4A6BD4E2 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "StargateExample WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -750,6 +777,7 @@
 				INFOPLIST_FILE = "WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -758,9 +786,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20F85913A30B44139C7504E7 /* Pods-StargateExample WatchKit Extension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "StargateExample WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
