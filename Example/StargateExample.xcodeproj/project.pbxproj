@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92730EA51E44FF981A59CF24 /* Pods_StargateExample_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C818D7FA0F2F0862588D8976 /* Pods_StargateExample_WatchKit_Extension.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		397273CF3D43849E33B28E56 /* Pods_StargateExample_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E9BC1F9089A4A68DCB2879 /* Pods_StargateExample_WatchKit_Extension.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9EACA5CCE8C92C3F8BC0DF32 /* Pods_StargateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C524B258CB4EB35C32784CBF /* Pods_StargateApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A1C947691AF02AAA00783952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C947681AF02AAA00783952 /* AppDelegate.swift */; };
 		A1C9476B1AF02AAA00783952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9476A1AF02AAA00783952 /* ViewController.swift */; };
 		A1C9476E1AF02AAA00783952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C9476C1AF02AAA00783952 /* Main.storyboard */; };
@@ -23,8 +24,7 @@
 		A1C947B81AF02BBA00783952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C947B71AF02BBA00783952 /* ViewController.swift */; };
 		A1C947BA1AF02BBA00783952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C947B91AF02BBA00783952 /* Images.xcassets */; };
 		A1C947BD1AF02BBA00783952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C947BB1AF02BBA00783952 /* Main.storyboard */; };
-		A8361A52C15072F7C0AFC67D /* Pods_StargateExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91985322804E7D953385281C /* Pods_StargateExample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		AEFBBFB66EE415FEB5F5E2E5 /* Pods_Stargate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FCBA3F3D2B2531EC93E166 /* Pods_Stargate.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E74B9D5BD439F5B3D567B6C4 /* Pods_StargateExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFEF92C0BF5D09B091B59CC /* Pods_StargateExample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +59,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1A737CF791F589DA4A6BD4E2 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		20F85913A30B44139C7504E7 /* Pods-StargateExample WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		2A1549CFB5596122772AE6C7 /* Pods-StargateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample.release.xcconfig"; sourceTree = "<group>"; };
-		6E1C3F83EDA2A08846397EAE /* Pods-Stargate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stargate/Pods-Stargate.release.xcconfig"; sourceTree = "<group>"; };
-		707D2F77961D07B4BC14FB4D /* Pods-StargateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample.debug.xcconfig"; sourceTree = "<group>"; };
-		735BBF3B5AA7EE228E1A8CC0 /* Pods-Stargate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stargate/Pods-Stargate.debug.xcconfig"; sourceTree = "<group>"; };
-		91985322804E7D953385281C /* Pods_StargateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D28C6B791E940198EBECAC4 /* Pods-StargateExample WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		436575A19A1E24DF673F7096 /* Pods-StargateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-StargateApp/Pods-StargateApp.release.xcconfig"; sourceTree = "<group>"; };
+		7A44E567CC0095DBFCB33567 /* Pods-StargateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample.debug.xcconfig"; sourceTree = "<group>"; };
+		91E9BC1F9089A4A68DCB2879 /* Pods_StargateExample_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargateExample_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EFE153D10C984073DB82A5 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		A1C947631AF02AAA00783952 /* StargateExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StargateExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C947671AF02AAA00783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C947681AF02AAA00783952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +79,7 @@
 		A1C9479D1AF02B6100783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C9479F1AF02B6100783952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A1C947A11AF02B6100783952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A1C947B11AF02BBA00783952 /* Stargate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C947B11AF02BBA00783952 /* Stargate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Stargate.app; path = StargateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C947B41AF02BBA00783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C947B51AF02BBA00783952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C947B71AF02BBA00783952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,8 +87,10 @@
 		A1C947BC1AF02BBA00783952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1C947D11AF0363A00783952 /* StargateExample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "StargateExample WatchKit Extension.entitlements"; path = "../StargateExample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		A1C947D21AF0365000783952 /* StargateExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = StargateExample.entitlements; path = ../../StargateExample.entitlements; sourceTree = "<group>"; };
-		C7FCBA3F3D2B2531EC93E166 /* Pods_Stargate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stargate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C818D7FA0F2F0862588D8976 /* Pods_StargateExample_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargateExample_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE95C91C8AD19E1ACD3C53E4 /* Pods-StargateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StargateApp/Pods-StargateApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BEFEF92C0BF5D09B091B59CC /* Pods_StargateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C524B258CB4EB35C32784CBF /* Pods_StargateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD93F03E775B4625ADB9B9F /* Pods-StargateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8361A52C15072F7C0AFC67D /* Pods_StargateExample.framework in Frameworks */,
+				E74B9D5BD439F5B3D567B6C4 /* Pods_StargateExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92730EA51E44FF981A59CF24 /* Pods_StargateExample_WatchKit_Extension.framework in Frameworks */,
+				397273CF3D43849E33B28E56 /* Pods_StargateExample_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,13 +121,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEFBBFB66EE415FEB5F5E2E5 /* Pods_Stargate.framework in Frameworks */,
+				9EACA5CCE8C92C3F8BC0DF32 /* Pods_StargateApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CAEED20942403020A067A3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C524B258CB4EB35C32784CBF /* Pods_StargateApp.framework */,
+				BEFEF92C0BF5D09B091B59CC /* Pods_StargateExample.framework */,
+				91E9BC1F9089A4A68DCB2879 /* Pods_StargateExample_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33F74A61648D9A1908D02E5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE95C91C8AD19E1ACD3C53E4 /* Pods-StargateApp.debug.xcconfig */,
+				436575A19A1E24DF673F7096 /* Pods-StargateApp.release.xcconfig */,
+				7A44E567CC0095DBFCB33567 /* Pods-StargateExample.debug.xcconfig */,
+				FBD93F03E775B4625ADB9B9F /* Pods-StargateExample.release.xcconfig */,
+				A0EFE153D10C984073DB82A5 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */,
+				1D28C6B791E940198EBECAC4 /* Pods-StargateExample WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A1C9475A1AF02AAA00783952 = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +159,8 @@
 				A1C947641AF02AAA00783952 /* Products */,
 				A1C9479B1AF02B6100783952 /* WatchKit App */,
 				A1C9478E1AF02B6100783952 /* WatchKit Extension */,
-				E075881E80839A0F04882709 /* Pods */,
-				FEE02D11A6A312FC46410CF4 /* Frameworks */,
+				33F74A61648D9A1908D02E5D /* Pods */,
+				1CAEED20942403020A067A3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,29 +254,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E075881E80839A0F04882709 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				735BBF3B5AA7EE228E1A8CC0 /* Pods-Stargate.debug.xcconfig */,
-				6E1C3F83EDA2A08846397EAE /* Pods-Stargate.release.xcconfig */,
-				707D2F77961D07B4BC14FB4D /* Pods-StargateExample.debug.xcconfig */,
-				2A1549CFB5596122772AE6C7 /* Pods-StargateExample.release.xcconfig */,
-				1A737CF791F589DA4A6BD4E2 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */,
-				20F85913A30B44139C7504E7 /* Pods-StargateExample WatchKit Extension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FEE02D11A6A312FC46410CF4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C7FCBA3F3D2B2531EC93E166 /* Pods_Stargate.framework */,
-				91985322804E7D953385281C /* Pods_StargateExample.framework */,
-				C818D7FA0F2F0862588D8976 /* Pods_StargateExample_WatchKit_Extension.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,13 +261,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1C947821AF02AAA00783952 /* Build configuration list for PBXNativeTarget "StargateExample" */;
 			buildPhases = (
-				CBB301DCC132691CBD9BA928 /* Check Pods Manifest.lock */,
+				92740ECE7FBE0F707F4F7289 /* Check Pods Manifest.lock */,
 				A1C9475F1AF02AAA00783952 /* Sources */,
 				A1C947601AF02AAA00783952 /* Frameworks */,
 				A1C947611AF02AAA00783952 /* Resources */,
 				A1C947AC1AF02B6100783952 /* Embed App Extensions */,
-				1DEB28E7B63636CD0C8EBE15 /* Embed Pods Frameworks */,
-				D34400D10F2EAA8322047F31 /* Copy Pods Resources */,
+				6668ACF9E190171210030579 /* Embed Pods Frameworks */,
+				09053CE1F2CD93C1313C2531 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,12 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1C947AB1AF02B6100783952 /* Build configuration list for PBXNativeTarget "StargateExample WatchKit Extension" */;
 			buildPhases = (
-				235621866ECA942D1BBADD88 /* Check Pods Manifest.lock */,
+				8FAD8929EB9B5C529342A5EF /* Check Pods Manifest.lock */,
 				A1C947891AF02B6100783952 /* Sources */,
 				A1C9478A1AF02B6100783952 /* Frameworks */,
 				A1C9478B1AF02B6100783952 /* Resources */,
-				71664BA3709624E29506F86A /* Embed Pods Frameworks */,
-				D140F7ED10A8B7EF417046D9 /* Copy Pods Resources */,
+				579FAD54D2CF27B9B0B61A89 /* Embed Pods Frameworks */,
+				5B539AFAE483FBF4C2DC74BF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,22 +316,22 @@
 			productReference = A1C947971AF02B6100783952 /* StargateExample WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp";
 		};
-		A1C947B01AF02BBA00783952 /* Stargate */ = {
+		A1C947B01AF02BBA00783952 /* StargateApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1C947CA1AF02BBA00783952 /* Build configuration list for PBXNativeTarget "Stargate" */;
+			buildConfigurationList = A1C947CA1AF02BBA00783952 /* Build configuration list for PBXNativeTarget "StargateApp" */;
 			buildPhases = (
-				BE36529EE2D2EEA21DA219E5 /* Check Pods Manifest.lock */,
+				5ABC32B35D05654D199F0004 /* Check Pods Manifest.lock */,
 				A1C947AD1AF02BBA00783952 /* Sources */,
 				A1C947AE1AF02BBA00783952 /* Frameworks */,
 				A1C947AF1AF02BBA00783952 /* Resources */,
-				FCC0992F41DFFE7F57103AED /* Embed Pods Frameworks */,
-				56B912F6AAC989DD88A7D46A /* Copy Pods Resources */,
+				8E0901855018A5EE2E6D6046 /* Embed Pods Frameworks */,
+				A71B4D9B6B98D585CF08A1E2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Stargate;
+			name = StargateApp;
 			productName = Stargate;
 			productReference = A1C947B11AF02BBA00783952 /* Stargate.app */;
 			productType = "com.apple.product-type.application";
@@ -384,7 +384,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1C947B01AF02BBA00783952 /* Stargate */,
+				A1C947B01AF02BBA00783952 /* StargateApp */,
 				A1C947621AF02AAA00783952 /* StargateExample */,
 				A1C9478C1AF02B6100783952 /* StargateExample WatchKit Extension */,
 				A1C947961AF02B6100783952 /* StargateExample WatchKit App */,
@@ -433,112 +433,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DEB28E7B63636CD0C8EBE15 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		235621866ECA942D1BBADD88 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		56B912F6AAC989DD88A7D46A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stargate/Pods-Stargate-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71664BA3709624E29506F86A /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE36529EE2D2EEA21DA219E5 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CBB301DCC132691CBD9BA928 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D140F7ED10A8B7EF417046D9 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D34400D10F2EAA8322047F31 /* Copy Pods Resources */ = {
+		09053CE1F2CD93C1313C2531 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -553,7 +448,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCC0992F41DFFE7F57103AED /* Embed Pods Frameworks */ = {
+		579FAD54D2CF27B9B0B61A89 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -565,7 +460,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stargate/Pods-Stargate-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ABC32B35D05654D199F0004 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B539AFAE483FBF4C2DC74BF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6668ACF9E190171210030579 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E0901855018A5EE2E6D6046 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateApp/Pods-StargateApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FAD8929EB9B5C529342A5EF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92740ECE7FBE0F707F4F7289 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A71B4D9B6B98D585CF08A1E2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateApp/Pods-StargateApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -735,7 +735,7 @@
 		};
 		A1C947831AF02AAA00783952 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 707D2F77961D07B4BC14FB4D /* Pods-StargateExample.debug.xcconfig */;
+			baseConfigurationReference = 7A44E567CC0095DBFCB33567 /* Pods-StargateExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = StargateExample.entitlements;
@@ -750,7 +750,7 @@
 		};
 		A1C947841AF02AAA00783952 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A1549CFB5596122772AE6C7 /* Pods-StargateExample.release.xcconfig */;
+			baseConfigurationReference = FBD93F03E775B4625ADB9B9F /* Pods-StargateExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = StargateExample.entitlements;
@@ -765,7 +765,7 @@
 		};
 		A1C947A61AF02B6100783952 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A737CF791F589DA4A6BD4E2 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = A0EFE153D10C984073DB82A5 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "StargateExample WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -784,7 +784,7 @@
 		};
 		A1C947A71AF02B6100783952 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20F85913A30B44139C7504E7 /* Pods-StargateExample WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = 1D28C6B791E940198EBECAC4 /* Pods-StargateExample WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "StargateExample WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -831,7 +831,7 @@
 		};
 		A1C947CB1AF02BBA00783952 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 735BBF3B5AA7EE228E1A8CC0 /* Pods-Stargate.debug.xcconfig */;
+			baseConfigurationReference = AE95C91C8AD19E1ACD3C53E4 /* Pods-StargateApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -844,6 +844,7 @@
 				INFOPLIST_FILE = "Mac App/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -851,7 +852,7 @@
 		};
 		A1C947CC1AF02BBA00783952 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E1C3F83EDA2A08846397EAE /* Pods-Stargate.release.xcconfig */;
+			baseConfigurationReference = 436575A19A1E24DF673F7096 /* Pods-StargateApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -859,6 +860,7 @@
 				INFOPLIST_FILE = "Mac App/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -903,7 +905,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1C947CA1AF02BBA00783952 /* Build configuration list for PBXNativeTarget "Stargate" */ = {
+		A1C947CA1AF02BBA00783952 /* Build configuration list for PBXNativeTarget "StargateApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1C947CB1AF02BBA00783952 /* Debug */,

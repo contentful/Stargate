@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1C947B01AF02BBA00783952"
-               BuildableName = "Stargate.app"
-               BlueprintName = "Stargate"
+               BuildableName = "StargateApp.app"
+               BlueprintName = "StargateApp"
                ReferencedContainer = "container:StargateExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1C947B01AF02BBA00783952"
-            BuildableName = "Stargate.app"
-            BlueprintName = "Stargate"
+            BuildableName = "StargateApp.app"
+            BlueprintName = "StargateApp"
             ReferencedContainer = "container:StargateExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,8 +67,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1C947B01AF02BBA00783952"
-            BuildableName = "Stargate.app"
-            BlueprintName = "Stargate"
+            BuildableName = "StargateApp.app"
+            BlueprintName = "StargateApp"
             ReferencedContainer = "container:StargateExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -86,8 +86,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1C947B01AF02BBA00783952"
-            BuildableName = "Stargate.app"
-            BlueprintName = "Stargate"
+            BuildableName = "StargateApp.app"
+            BlueprintName = "StargateApp"
             ReferencedContainer = "container:StargateExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
