@@ -1,0 +1,30 @@
+PODS:
+  - MMWormhole (1.1.1):
+    - MMWormhole/Core (= 1.1.1)
+  - MMWormhole/Core (1.1.1)
+  - PeerKit (1.1.0)
+  - Stargate (0.0.1):
+    - MMWormhole
+    - PeerKit
+
+DEPENDENCIES:
+  - PeerKit (from `https://github.com/neonichu/PeerKit.git`)
+  - Stargate (from `..`)
+
+EXTERNAL SOURCES:
+  PeerKit:
+    :git: https://github.com/neonichu/PeerKit.git
+  Stargate:
+    :path: ..
+
+CHECKOUT OPTIONS:
+  PeerKit:
+    :commit: 7c4b6d679c61e43d51806a00d142e3bddb485334
+    :git: https://github.com/neonichu/PeerKit.git
+
+SPEC CHECKSUMS:
+  MMWormhole: 941cd168b4afd6073f883b82944d6eded4e00203
+  PeerKit: c8a4828293989089f50d49ca7b77dd3dca1fa89b
+  Stargate: 94aca4471269f4b33e14e783244af3627f76029d
+
+COCOAPODS: 0.36.4

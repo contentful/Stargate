@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92730EA51E44FF981A59CF24 /* Pods_StargateExample_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C818D7FA0F2F0862588D8976 /* Pods_StargateExample_WatchKit_Extension.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A1C947691AF02AAA00783952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C947681AF02AAA00783952 /* AppDelegate.swift */; };
+		A1C9476B1AF02AAA00783952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9476A1AF02AAA00783952 /* ViewController.swift */; };
+		A1C9476E1AF02AAA00783952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C9476C1AF02AAA00783952 /* Main.storyboard */; };
+		A1C947701AF02AAA00783952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C9476F1AF02AAA00783952 /* Images.xcassets */; };
+		A1C947731AF02AAA00783952 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C947711AF02AAA00783952 /* LaunchScreen.xib */; };
+		A1C947921AF02B6100783952 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C947911AF02B6100783952 /* InterfaceController.swift */; };
+		A1C947941AF02B6100783952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C947931AF02B6100783952 /* Images.xcassets */; };
+		A1C947981AF02B6100783952 /* StargateExample WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A1C947971AF02B6100783952 /* StargateExample WatchKit App.app */; };
+		A1C947A01AF02B6100783952 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C9479E1AF02B6100783952 /* Interface.storyboard */; };
+		A1C947A21AF02B6100783952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C947A11AF02B6100783952 /* Images.xcassets */; };
+		A1C947A51AF02B6100783952 /* StargateExample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A1C9478D1AF02B6100783952 /* StargateExample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1C947B61AF02BBA00783952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C947B51AF02BBA00783952 /* AppDelegate.swift */; };
+		A1C947B81AF02BBA00783952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C947B71AF02BBA00783952 /* ViewController.swift */; };
+		A1C947BA1AF02BBA00783952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C947B91AF02BBA00783952 /* Images.xcassets */; };
+		A1C947BD1AF02BBA00783952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C947BB1AF02BBA00783952 /* Main.storyboard */; };
+		A8361A52C15072F7C0AFC67D /* Pods_StargateExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91985322804E7D953385281C /* Pods_StargateExample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AEFBBFB66EE415FEB5F5E2E5 /* Pods_Stargate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FCBA3F3D2B2531EC93E166 /* Pods_Stargate.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1C947991AF02B6100783952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C9475B1AF02AAA00783952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C947961AF02B6100783952;
+			remoteInfo = "StargateExample WatchKit App";
+		};
+		A1C947A31AF02B6100783952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C9475B1AF02AAA00783952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C9478C1AF02B6100783952;
+			remoteInfo = "StargateExample WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1C947AC1AF02B6100783952 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1C947A51AF02B6100783952 /* StargateExample WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A737CF791F589DA4A6BD4E2 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		20F85913A30B44139C7504E7 /* Pods-StargateExample WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		2A1549CFB5596122772AE6C7 /* Pods-StargateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample.release.xcconfig"; sourceTree = "<group>"; };
+		6E1C3F83EDA2A08846397EAE /* Pods-Stargate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stargate/Pods-Stargate.release.xcconfig"; sourceTree = "<group>"; };
+		707D2F77961D07B4BC14FB4D /* Pods-StargateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargateExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample.debug.xcconfig"; sourceTree = "<group>"; };
+		735BBF3B5AA7EE228E1A8CC0 /* Pods-Stargate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stargate/Pods-Stargate.debug.xcconfig"; sourceTree = "<group>"; };
+		91985322804E7D953385281C /* Pods_StargateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C947631AF02AAA00783952 /* StargateExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StargateExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C947671AF02AAA00783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C947681AF02AAA00783952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1C9476A1AF02AAA00783952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C9476D1AF02AAA00783952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C9476F1AF02AAA00783952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1C947721AF02AAA00783952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A1C9478D1AF02B6100783952 /* StargateExample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StargateExample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C947901AF02B6100783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C947911AF02B6100783952 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A1C947931AF02B6100783952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1C947971AF02B6100783952 /* StargateExample WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StargateExample WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C9479D1AF02B6100783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C9479F1AF02B6100783952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A1C947A11AF02B6100783952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1C947B11AF02BBA00783952 /* Stargate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C947B41AF02BBA00783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C947B51AF02BBA00783952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1C947B71AF02BBA00783952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C947B91AF02BBA00783952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1C947BC1AF02BBA00783952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7FCBA3F3D2B2531EC93E166 /* Pods_Stargate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stargate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C818D7FA0F2F0862588D8976 /* Pods_StargateExample_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargateExample_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77D51BDACC4F6463FD65D309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C947601AF02AAA00783952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8361A52C15072F7C0AFC67D /* Pods_StargateExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C9478A1AF02B6100783952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92730EA51E44FF981A59CF24 /* Pods_StargateExample_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C947AE1AF02BBA00783952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFBBFB66EE415FEB5F5E2E5 /* Pods_Stargate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1C9475A1AF02AAA00783952 = {
+			isa = PBXGroup;
+			children = (
+				A1C947B21AF02BBA00783952 /* Mac App */,
+				A1C947651AF02AAA00783952 /* Phone App */,
+				A1C947641AF02AAA00783952 /* Products */,
+				A1C9479B1AF02B6100783952 /* WatchKit App */,
+				A1C9478E1AF02B6100783952 /* WatchKit Extension */,
+				E075881E80839A0F04882709 /* Pods */,
+				FEE02D11A6A312FC46410CF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C947641AF02AAA00783952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C947631AF02AAA00783952 /* StargateExample.app */,
+				A1C9478D1AF02B6100783952 /* StargateExample WatchKit Extension.appex */,
+				A1C947971AF02B6100783952 /* StargateExample WatchKit App.app */,
+				A1C947B11AF02BBA00783952 /* Stargate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C947651AF02AAA00783952 /* Phone App */ = {
+			isa = PBXGroup;
+			children = (
+				A1C947681AF02AAA00783952 /* AppDelegate.swift */,
+				A1C9476A1AF02AAA00783952 /* ViewController.swift */,
+				A1C947881AF02B0200783952 /* Resources */,
+				A1C947661AF02AAA00783952 /* Supporting Files */,
+			);
+			path = "Phone App";
+			sourceTree = "<group>";
+		};
+		A1C947661AF02AAA00783952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1C947671AF02AAA00783952 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1C947881AF02B0200783952 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1C9476F1AF02AAA00783952 /* Images.xcassets */,
+				A1C947711AF02AAA00783952 /* LaunchScreen.xib */,
+				A1C9476C1AF02AAA00783952 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1C9478E1AF02B6100783952 /* WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1C947931AF02B6100783952 /* Images.xcassets */,
+				A1C947911AF02B6100783952 /* InterfaceController.swift */,
+				A1C947901AF02B6100783952 /* Info.plist */,
+			);
+			path = "WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A1C9479B1AF02B6100783952 /* WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A1C947A11AF02B6100783952 /* Images.xcassets */,
+				A1C9479E1AF02B6100783952 /* Interface.storyboard */,
+				A1C9479D1AF02B6100783952 /* Info.plist */,
+			);
+			path = "WatchKit App";
+			sourceTree = "<group>";
+		};
+		A1C947B21AF02BBA00783952 /* Mac App */ = {
+			isa = PBXGroup;
+			children = (
+				A1C947B51AF02BBA00783952 /* AppDelegate.swift */,
+				A1C947B71AF02BBA00783952 /* ViewController.swift */,
+				A1C947D01AF02BE600783952 /* Resources */,
+				A1C947B31AF02BBA00783952 /* Supporting Files */,
+			);
+			path = "Mac App";
+			sourceTree = "<group>";
+		};
+		A1C947B31AF02BBA00783952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1C947B41AF02BBA00783952 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1C947D01AF02BE600783952 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1C947B91AF02BBA00783952 /* Images.xcassets */,
+				A1C947BB1AF02BBA00783952 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E075881E80839A0F04882709 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				735BBF3B5AA7EE228E1A8CC0 /* Pods-Stargate.debug.xcconfig */,
+				6E1C3F83EDA2A08846397EAE /* Pods-Stargate.release.xcconfig */,
+				707D2F77961D07B4BC14FB4D /* Pods-StargateExample.debug.xcconfig */,
+				2A1549CFB5596122772AE6C7 /* Pods-StargateExample.release.xcconfig */,
+				1A737CF791F589DA4A6BD4E2 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */,
+				20F85913A30B44139C7504E7 /* Pods-StargateExample WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEE02D11A6A312FC46410CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7FCBA3F3D2B2531EC93E166 /* Pods_Stargate.framework */,
+				91985322804E7D953385281C /* Pods_StargateExample.framework */,
+				C818D7FA0F2F0862588D8976 /* Pods_StargateExample_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C947621AF02AAA00783952 /* StargateExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C947821AF02AAA00783952 /* Build configuration list for PBXNativeTarget "StargateExample" */;
+			buildPhases = (
+				CBB301DCC132691CBD9BA928 /* Check Pods Manifest.lock */,
+				A1C9475F1AF02AAA00783952 /* Sources */,
+				A1C947601AF02AAA00783952 /* Frameworks */,
+				A1C947611AF02AAA00783952 /* Resources */,
+				A1C947AC1AF02B6100783952 /* Embed App Extensions */,
+				1DEB28E7B63636CD0C8EBE15 /* Embed Pods Frameworks */,
+				D34400D10F2EAA8322047F31 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C947A41AF02B6100783952 /* PBXTargetDependency */,
+			);
+			name = StargateExample;
+			productName = StargateExample;
+			productReference = A1C947631AF02AAA00783952 /* StargateExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1C9478C1AF02B6100783952 /* StargateExample WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C947AB1AF02B6100783952 /* Build configuration list for PBXNativeTarget "StargateExample WatchKit Extension" */;
+			buildPhases = (
+				235621866ECA942D1BBADD88 /* Check Pods Manifest.lock */,
+				A1C947891AF02B6100783952 /* Sources */,
+				A1C9478A1AF02B6100783952 /* Frameworks */,
+				A1C9478B1AF02B6100783952 /* Resources */,
+				71664BA3709624E29506F86A /* Embed Pods Frameworks */,
+				D140F7ED10A8B7EF417046D9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C9479A1AF02B6100783952 /* PBXTargetDependency */,
+			);
+			name = "StargateExample WatchKit Extension";
+			productName = "StargateExample WatchKit Extension";
+			productReference = A1C9478D1AF02B6100783952 /* StargateExample WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A1C947961AF02B6100783952 /* StargateExample WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C947AA1AF02B6100783952 /* Build configuration list for PBXNativeTarget "StargateExample WatchKit App" */;
+			buildPhases = (
+				A1C947951AF02B6100783952 /* Resources */,
+				77D51BDACC4F6463FD65D309 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StargateExample WatchKit App";
+			productName = "StargateExample WatchKit App";
+			productReference = A1C947971AF02B6100783952 /* StargateExample WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		A1C947B01AF02BBA00783952 /* Stargate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C947CA1AF02BBA00783952 /* Build configuration list for PBXNativeTarget "Stargate" */;
+			buildPhases = (
+				BE36529EE2D2EEA21DA219E5 /* Check Pods Manifest.lock */,
+				A1C947AD1AF02BBA00783952 /* Sources */,
+				A1C947AE1AF02BBA00783952 /* Frameworks */,
+				A1C947AF1AF02BBA00783952 /* Resources */,
+				FCC0992F41DFFE7F57103AED /* Embed Pods Frameworks */,
+				56B912F6AAC989DD88A7D46A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stargate;
+			productName = Stargate;
+			productReference = A1C947B11AF02BBA00783952 /* Stargate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C9475B1AF02AAA00783952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Contentful GmbH";
+				TargetAttributes = {
+					A1C947621AF02AAA00783952 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A1C9478C1AF02B6100783952 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A1C947961AF02B6100783952 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A1C947B01AF02BBA00783952 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A1C9475E1AF02AAA00783952 /* Build configuration list for PBXProject "StargateExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1C9475A1AF02AAA00783952;
+			productRefGroup = A1C947641AF02AAA00783952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C947B01AF02BBA00783952 /* Stargate */,
+				A1C947621AF02AAA00783952 /* StargateExample */,
+				A1C9478C1AF02B6100783952 /* StargateExample WatchKit Extension */,
+				A1C947961AF02B6100783952 /* StargateExample WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C947611AF02AAA00783952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C9476E1AF02AAA00783952 /* Main.storyboard in Resources */,
+				A1C947731AF02AAA00783952 /* LaunchScreen.xib in Resources */,
+				A1C947701AF02AAA00783952 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C9478B1AF02B6100783952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C947981AF02B6100783952 /* StargateExample WatchKit App.app in Resources */,
+				A1C947941AF02B6100783952 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C947951AF02B6100783952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C947A01AF02B6100783952 /* Interface.storyboard in Resources */,
+				A1C947A21AF02B6100783952 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C947AF1AF02BBA00783952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C947BA1AF02BBA00783952 /* Images.xcassets in Resources */,
+				A1C947BD1AF02BBA00783952 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DEB28E7B63636CD0C8EBE15 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		235621866ECA942D1BBADD88 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56B912F6AAC989DD88A7D46A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stargate/Pods-Stargate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71664BA3709624E29506F86A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE36529EE2D2EEA21DA219E5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB301DCC132691CBD9BA928 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D140F7ED10A8B7EF417046D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample WatchKit Extension/Pods-StargateExample WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D34400D10F2EAA8322047F31 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StargateExample/Pods-StargateExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC0992F41DFFE7F57103AED /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stargate/Pods-Stargate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C9475F1AF02AAA00783952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C9476B1AF02AAA00783952 /* ViewController.swift in Sources */,
+				A1C947691AF02AAA00783952 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C947891AF02B6100783952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C947921AF02B6100783952 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C947AD1AF02BBA00783952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C947B81AF02BBA00783952 /* ViewController.swift in Sources */,
+				A1C947B61AF02BBA00783952 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1C9479A1AF02B6100783952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C947961AF02B6100783952 /* StargateExample WatchKit App */;
+			targetProxy = A1C947991AF02B6100783952 /* PBXContainerItemProxy */;
+		};
+		A1C947A41AF02B6100783952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C9478C1AF02B6100783952 /* StargateExample WatchKit Extension */;
+			targetProxy = A1C947A31AF02B6100783952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1C9476C1AF02AAA00783952 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C9476D1AF02AAA00783952 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		A1C947711AF02AAA00783952 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C947721AF02AAA00783952 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = .;
+			sourceTree = "<group>";
+		};
+		A1C9479E1AF02B6100783952 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C9479F1AF02B6100783952 /* Base */,
+			);
+			name = Interface.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		A1C947BB1AF02BBA00783952 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C947BC1AF02BBA00783952 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1C947801AF02AAA00783952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1C947811AF02AAA00783952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1C947831AF02AAA00783952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707D2F77961D07B4BC14FB4D /* Pods-StargateExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Phone App/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1C947841AF02AAA00783952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1549CFB5596122772AE6C7 /* Pods-StargateExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Phone App/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A1C947A61AF02B6100783952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A737CF791F589DA4A6BD4E2 /* Pods-StargateExample WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1C947A71AF02B6100783952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F85913A30B44139C7504E7 /* Pods-StargateExample WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1C947A81AF02B6100783952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = StargateExample_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A1C947A91AF02B6100783952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = StargateExample_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A1C947CB1AF02BBA00783952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 735BBF3B5AA7EE228E1A8CC0 /* Pods-Stargate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mac App/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A1C947CC1AF02BBA00783952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1C3F83EDA2A08846397EAE /* Pods-Stargate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Mac App/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C9475E1AF02AAA00783952 /* Build configuration list for PBXProject "StargateExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C947801AF02AAA00783952 /* Debug */,
+				A1C947811AF02AAA00783952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C947821AF02AAA00783952 /* Build configuration list for PBXNativeTarget "StargateExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C947831AF02AAA00783952 /* Debug */,
+				A1C947841AF02AAA00783952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C947AA1AF02B6100783952 /* Build configuration list for PBXNativeTarget "StargateExample WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C947A81AF02B6100783952 /* Debug */,
+				A1C947A91AF02B6100783952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C947AB1AF02B6100783952 /* Build configuration list for PBXNativeTarget "StargateExample WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C947A61AF02B6100783952 /* Debug */,
+				A1C947A71AF02B6100783952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C947CA1AF02BBA00783952 /* Build configuration list for PBXNativeTarget "Stargate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C947CB1AF02BBA00783952 /* Debug */,
+				A1C947CC1AF02BBA00783952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C9475B1AF02AAA00783952 /* Project object */;
+}

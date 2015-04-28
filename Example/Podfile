@@ -1,0 +1,26 @@
+use_frameworks!
+
+target 'Stargate' do
+
+platform :osx, '10.10'
+
+pod 'PeerKit', :git => 'https://github.com/neonichu/PeerKit.git'
+pod 'Stargate', :path => '..'
+
+end
+
+target 'StargateExample' do
+
+platform :ios, '8.0'
+
+pod 'Stargate', :path => '..'
+
+end
+
+target 'StargateExample WatchKit Extension' do
+
+platform :ios, '8.0'
+
+pod 'Stargate', :path => '..'
+
+end
