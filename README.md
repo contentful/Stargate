@@ -1,5 +1,7 @@
 # Stargate
 
+![](Stargate.gif)
+
 A communication channel from your Mac to your watch.
 
 Providing a convenient wrapper around [MMWormhole][1] and [PeerKit][2],
