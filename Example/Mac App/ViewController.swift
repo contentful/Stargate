@@ -7,17 +7,24 @@
 //
 
 import Cocoa
+import Stargate
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSTextViewDelegate {
+    let stargate = Earth(applicationGroupIdentifier: "group.com.contentful.Stargate")
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        stargate.listenForMessage(identifier: "stargate") { (object) -> Void in
+            println("Received message on Mac: \(object)")
+        }
     }
 
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
+    // MARK: NSTextViewDelegate
+
+    func textDidChange(notification: NSNotification) {
+        if let textView = notification.object as? NSTextView, text = textView.string {
+            stargate.passMessage(text, identifier: "stargate")
         }
     }
 }
