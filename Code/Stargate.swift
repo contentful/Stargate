@@ -88,6 +88,8 @@ public class Atlantis : Base {
 
     public override func passMessage(message: NSCoding, identifier: String) {
         wormhole.passMessageObject(message, identifier: identifier)
+
+        WKInterfaceController.openParentApplication([NSObject : AnyObject](), reply: nil)
     }
 
     public override func stopListeningForMessage(#identifier: String) {
