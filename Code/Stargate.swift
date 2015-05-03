@@ -59,6 +59,15 @@ public class Abydos : Base {
 
         //UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler() {}
     }
+
+    public func tunnelReplies(#identifier: String) {
+        wormhole.listenForMessageWithIdentifier(identifier) { (message) -> Void in
+            if let message: AnyObject = message {
+                let allPeers = PeerKit.session?.connectedPeers as? [MCPeerID]
+                PeerKit.sendEvent(identifier, object: message, toPeers: allPeers)
+            }
+        }
+    }
 }
 
 /// Stargate endpoint to be used on the ᴡᴀᴛᴄʜ

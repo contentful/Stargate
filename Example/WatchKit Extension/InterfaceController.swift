@@ -11,8 +11,8 @@ import Stargate
 import WatchKit
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet weak var button: WKInterfaceButton!
     @IBOutlet weak var image: WKInterfaceImage!
-    @IBOutlet weak var label: WKInterfaceLabel!
 
     let stargate = Atlantis(applicationGroupIdentifier: "group.com.contentful.Stargate")
 
@@ -20,11 +20,15 @@ class InterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
     }
 
+    @IBAction func buttonTapped() {
+        stargate.passMessage("buttonTapped", identifier:"stargate2")
+    }
+
     override func willActivate() {
         super.willActivate()
 
         stargate.listenForMessage(identifier:"stargate") { (object) -> Void in
-            self.label.setText(object as? String)
+            self.button.setTitle(object as? String)
         }
     }
 

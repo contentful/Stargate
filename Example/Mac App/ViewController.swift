@@ -15,7 +15,7 @@ class ViewController: NSViewController, NSTextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        stargate.listenForMessage(identifier: "stargate") { (object) -> Void in
+        stargate.listenForMessage(identifier: "stargate2") { (object) -> Void in
             println("Received message on Mac: \(object)")
         }
     }

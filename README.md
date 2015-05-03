@@ -23,7 +23,7 @@ Send and receive messages via Multipeer Connectivity:
 ```swift
 let stargate = Earth(applicationGroupIdentifier: "group.com.contentful.Stargate")
 
-stargate.listenForMessage(identifier: "stargate") { (object) -> Void in
+stargate.listenForMessage(identifier: "stargate2") { (object) -> Void in
 	println("Received message on Mac: \(object)")
 }
 
@@ -38,6 +38,7 @@ Bridge messages between Multipeer and Darwin notifications:
 let stargate = Abydos(applicationGroupIdentifier: "group.com.contentful.Stargate")
     
 stargate.tunnel()
+stargate.tunnelReplies(identifier: "stargate2")
 ```
 
 ### On the watch
@@ -46,6 +47,8 @@ Send and receive messages via Darwin notifications:
 
 ```swift
 let stargate = Atlantis(applicationGroupIdentifier: "group.com.contentful.Stargate")
+
+stargate.passMessage("YOLO", identifier:"stargate2")
 
 stargate.listenForMessage(identifier:"stargate") { (object) -> Void in
 	println("Received message on watch: \(object)")

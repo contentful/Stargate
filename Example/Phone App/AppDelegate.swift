@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidFinishLaunching(application: UIApplication) {
         stargate.tunnel()
+        stargate.tunnelReplies(identifier: "stargate2")
 
         // FIXME: Should be moved into tunnel() eventually
         UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler() {}
