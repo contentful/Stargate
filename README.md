@@ -12,7 +12,7 @@ OS X application and ᴡᴀᴛᴄʜ via your iPhone.
 
 Simply install it via [CocoaPods][4]:
 
-```
+```ruby
 pod 'Stargate'
 ```
 
@@ -61,7 +61,7 @@ stargate.stopListeningForMessage(identifier:"stargate")
 
 ## License
 
-Copyright (c) 2015 Contentful GmbH. See LICENSE for further details.
+Copyright (c) 2015 Contentful GmbH. See [LICENSE](LICENSE) for further details.
 
 
 [1]: https://github.com/mutualmobile/MMWormhole
