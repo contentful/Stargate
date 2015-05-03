@@ -16,6 +16,8 @@ Simply install it via [CocoaPods][4]:
 pod 'Stargate'
 ```
 
+Note: make sure you use version [0.37][5] or newer.
+
 ### On the Mac
 
 Send and receive messages via Multipeer Connectivity:
@@ -65,3 +67,4 @@ Copyright (c) 2015 Contentful GmbH. See LICENSE for further details.
 [1]: https://github.com/mutualmobile/MMWormhole
 [2]: https://github.com/jpsim/PeerKit
 [4]: http://cocoapods.org
+[5]: http://blog.cocoapods.org/CocoaPods-0.37/

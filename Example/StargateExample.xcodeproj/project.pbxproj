@@ -79,7 +79,7 @@
 		A1C9479D1AF02B6100783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C9479F1AF02B6100783952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A1C947A11AF02B6100783952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A1C947B11AF02BBA00783952 /* Stargate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Stargate.app; path = StargateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C947B11AF02BBA00783952 /* StargateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StargateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C947B41AF02BBA00783952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C947B51AF02BBA00783952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C947B71AF02BBA00783952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				A1C947631AF02AAA00783952 /* StargateExample.app */,
 				A1C9478D1AF02B6100783952 /* StargateExample WatchKit Extension.appex */,
 				A1C947971AF02B6100783952 /* StargateExample WatchKit App.app */,
-				A1C947B11AF02BBA00783952 /* Stargate.app */,
+				A1C947B11AF02BBA00783952 /* StargateApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 			);
 			name = StargateApp;
 			productName = Stargate;
-			productReference = A1C947B11AF02BBA00783952 /* Stargate.app */;
+			productReference = A1C947B11AF02BBA00783952 /* StargateApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
