@@ -30,6 +30,13 @@ class InterfaceController: WKInterfaceController {
         stargate.listenForMessage(identifier:"stargate") { (object) -> Void in
             self.button.setTitle(object as? String)
         }
+
+        stargate.listenForMessage(identifier:"stargate.file") { (object) -> Void in
+            if let data = object as? NSData {
+                let image = UIImage(data: data)
+                self.image.setImage(image)
+            }
+        }
     }
 
     override func didDeactivate() {

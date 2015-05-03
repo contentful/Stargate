@@ -17,7 +17,7 @@
                                         <action selector="buttonTapped" destination="AgC-eL-Hgc" id="JtX-bk-1Yw"/>
                                     </connections>
                                 </button>
-                                <imageView width="1" height="110" alignment="left" id="ch9-0D-twW"/>
+                                <imageView width="1" height="110" alignment="left" contentMode="scaleAspectFit" id="ch9-0D-twW"/>
                             </items>
                         </group>
                     </items>

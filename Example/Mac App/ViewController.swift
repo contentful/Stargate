@@ -12,6 +12,20 @@ import Stargate
 class ViewController: NSViewController, NSTextViewDelegate {
     let stargate = Earth(applicationGroupIdentifier: "group.com.contentful.Stargate")
 
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "fileOpened:", name: AppDelegate.FileOpenedNotification, object: nil)
+    }
+
+    func fileOpened(note: NSNotification) {
+        if let userInfo = note.userInfo, filename = userInfo[AppDelegate.FileToOpen] as? String {
+            if let data = NSData(contentsOfFile: filename) {
+                stargate.passMessage(data, identifier: "stargate.file")
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
