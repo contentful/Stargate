@@ -6,19 +6,9 @@
 //  Copyright (c) 2015 Contentful GmbH. All rights reserved.
 //
 
-import Stargate
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    let stargate = Abydos(applicationGroupIdentifier: "group.com.contentful.Stargate")
     var window: UIWindow?
-
-    func applicationDidFinishLaunching(application: UIApplication) {
-        stargate.tunnel()
-        stargate.tunnelReplies(identifier: "stargate2")
-
-        // FIXME: Should be moved into tunnel() eventually
-        UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler() {}
-    }
 }

@@ -9,6 +9,8 @@
 import MultipeerConnectivity
 import PeerKit
 
+public typealias DebugHandler = (message: String) -> Void
+
 public class Base {
     private var applicationGroupIdentifier: String = ""
     var sanitizedIdentifier: String {
@@ -39,20 +41,29 @@ import UIKit
 
 /// Stargate endpoint to be used on the phone
 public class Abydos : Base {
+    private var callback: DebugHandler?
     var wormhole: MMWormhole!
 
     public override init(applicationGroupIdentifier: String) {
         super.init(applicationGroupIdentifier: applicationGroupIdentifier)
 
-        //PeerKit.onConnect = { (me, you) -> Void in println("connect: \(me) <=> \(you)") }
         PeerKit.transceive(sanitizedIdentifier)
 
         wormhole = MMWormhole(applicationGroupIdentifier: applicationGroupIdentifier, optionalDirectory: "stargate")
     }
 
+    public func debug(callback: DebugHandler) {
+        PeerKit.onConnect = { (me, you) -> Void in callback(message: "connect: \(me) <=> \(you)") }
+        self.callback = callback
+    }
+
     public func tunnel() {
         PeerKit.onEvent = { (peerID, event, object) -> Void in
             if let object = object as? NSCoding {
+                if let callback = self.callback {
+                    callback(message: "Received message from Mac: \(object) for \(event)")
+                }
+
                 self.wormhole.passMessageObject(object, identifier: event)
             }
         }
@@ -65,6 +76,10 @@ public class Abydos : Base {
             if let message: AnyObject = message {
                 let allPeers = PeerKit.session?.connectedPeers as? [MCPeerID]
                 PeerKit.sendEvent(identifier, object: message, toPeers: allPeers)
+                if let callback = self.callback {
+                    callback(message: "Received message from watch: \(message) for \(identifier)")
+                }
+
             }
         }
     }
