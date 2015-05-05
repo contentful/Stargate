@@ -6,7 +6,8 @@ A communication channel from your Mac to your watch.
 
 Providing a convenient wrapper around [MMWormhole][1] and [PeerKit][2],
 Stargate leverages Multipeer Connectivity and App Groups to communicate between an
-OS X application and ᴡᴀᴛᴄʜ via your iPhone. 
+OS X application and ᴡᴀᴛᴄʜ via your iPhone. The communication is bi-directional and
+lets you send any object that complies with `NSCoding`.
 
 ## Usage
 
@@ -59,6 +60,9 @@ stargate.listenForMessage(identifier:"stargate") { (object) -> Void in
 stargate.stopListeningForMessage(identifier:"stargate")
 ```
 
+Look at the [example project](Example/) for guidance on how to set up one project for all three platforms. When creating the targets, make sure you don't accidentially select the [OS X target][6] as host for the
+WatchKit extension.
+
 ## License
 
 Copyright (c) 2015 Contentful GmbH. See [LICENSE](LICENSE) for further details.
@@ -68,3 +72,4 @@ Copyright (c) 2015 Contentful GmbH. See [LICENSE](LICENSE) for further details.
 [2]: https://github.com/jpsim/PeerKit
 [4]: http://cocoapods.org
 [5]: http://blog.cocoapods.org/CocoaPods-0.37/
+[6]: http://openradar.appspot.com/radar?id=4975391517179904
