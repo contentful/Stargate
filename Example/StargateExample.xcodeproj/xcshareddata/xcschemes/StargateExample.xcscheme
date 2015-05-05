@@ -20,20 +20,6 @@
                ReferencedContainer = "container:StargateExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1C947771AF02AAA00783952"
-               BuildableName = "StargateExampleTests.xctest"
-               BlueprintName = "StargateExampleTests"
-               ReferencedContainer = "container:StargateExample.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
