@@ -13,6 +13,8 @@ public typealias DebugHandler = (message: String) -> Void
 
 public class Base {
     private var applicationGroupIdentifier: String = ""
+    var pingIdentifier = "274EAEF1-A178-47FE-81F4-96E87C242456"
+    var pingPayload = "ping"
     var sanitizedIdentifier: String {
         return applicationGroupIdentifier.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions.allZeros, range: nil).substringToIndex(advance(applicationGroupIdentifier.startIndex, 15))
     }
@@ -27,6 +29,11 @@ public class Base {
 
     public func passMessage(message: NSCoding, identifier: String) {
         fatalError("passMessageObject() needs to be overidden in subclasses.")
+    }
+
+    public func sendMultipeerMessage(message: AnyObject, identifier: String) {
+        let allPeers = PeerKit.session?.connectedPeers as? [MCPeerID]
+        PeerKit.sendEvent(identifier, object: message, toPeers: allPeers)
     }
 
     public func stopListeningForMessage(#identifier: String) {
@@ -48,8 +55,10 @@ public class Abydos : Base {
         super.init(applicationGroupIdentifier: applicationGroupIdentifier)
 
         PeerKit.transceive(sanitizedIdentifier)
+        sendMultipeerMessage(pingPayload, identifier: pingIdentifier)
 
         wormhole = MMWormhole(applicationGroupIdentifier: applicationGroupIdentifier, optionalDirectory: "stargate")
+        wormhole.passMessageObject(pingPayload, identifier: pingIdentifier)
     }
 
     public func debug(callback: DebugHandler) {
@@ -58,6 +67,7 @@ public class Abydos : Base {
     }
 
     public func tunnel() {
+        PeerKit.transceive(sanitizedIdentifier)
         PeerKit.onEvent = { (peerID, event, object) -> Void in
             if let object = object as? NSCoding {
                 if let callback = self.callback {
@@ -74,12 +84,11 @@ public class Abydos : Base {
     public func tunnelReplies(#identifier: String) {
         wormhole.listenForMessageWithIdentifier(identifier) { (message) -> Void in
             if let message: AnyObject = message {
-                let allPeers = PeerKit.session?.connectedPeers as? [MCPeerID]
-                PeerKit.sendEvent(identifier, object: message, toPeers: allPeers)
                 if let callback = self.callback {
                     callback(message: "Received message from watch: \(message) for \(identifier)")
                 }
 
+                self.sendMultipeerMessage(message, identifier: identifier)
             }
         }
     }
@@ -93,6 +102,7 @@ public class Atlantis : Base {
         super.init(applicationGroupIdentifier: applicationGroupIdentifier)
 
         wormhole = MMWormhole(applicationGroupIdentifier: applicationGroupIdentifier, optionalDirectory: "stargate")
+        passMessage(pingPayload, identifier: pingIdentifier)
     }
 
     public override func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
@@ -120,6 +130,7 @@ public class Earth : Base {
         super.init(applicationGroupIdentifier: applicationGroupIdentifier)
 
         PeerKit.transceive(sanitizedIdentifier)
+        passMessage(pingPayload, identifier: pingIdentifier)
     }
 
     public override func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
@@ -129,8 +140,7 @@ public class Earth : Base {
     }
 
     public override func passMessage(message: NSCoding, identifier: String) {
-        let allPeers = PeerKit.session?.connectedPeers as? [MCPeerID]
-        PeerKit.sendEvent(identifier, object: message, toPeers: allPeers)
+        sendMultipeerMessage(message, identifier: identifier)
     }
 
     public override func stopListeningForMessage(#identifier: String) {
