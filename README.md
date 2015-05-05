@@ -14,10 +14,13 @@ lets you send any object that complies with `NSCoding`.
 Simply install it via [CocoaPods][4]:
 
 ```ruby
+use_frameworks!
+
 pod 'Stargate'
 ```
 
-Note: make sure you use version [0.37][5] or newer.
+Note: make sure you use version [0.37][5] or newer. Stargate is written in Swift 1.2,
+so it requires Xcode 6.3 or newer as well.
 
 ### On the Mac
 
