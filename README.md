@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Stargate.svg?style=flat)](http://cocoadocs.org/docsets/Stargate)
 [![License](https://img.shields.io/cocoapods/l/Stargate.svg?style=flat)](http://cocoadocs.org/docsets/Stargate)
 [![Platform](https://img.shields.io/cocoapods/p/Stargate.svg?style=flat)](http://cocoadocs.org/docsets/Stargate)
-[![Build Status](https://circleci.com/gh/contentful-labs/Stargate.svg?style=shield)](https://circleci.com/gh/contentful-labs/Stargate)
+[![Build Status](https://img.shields.io/circleci/project/contentful-labs/Stargate.svg?style=flat)](https://circleci.com/gh/contentful-labs/Stargate)
 <!-- [![Coverage Status](https://img.shields.io/coveralls/contentful-labs/Stargate.svg)](https://coveralls.io/r/contentful-labs/Stargate?branch=master) -->
 
 ![](Stargate.gif)
