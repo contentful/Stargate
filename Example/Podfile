@@ -4,7 +4,6 @@ target 'StargateApp' do
 
 platform :osx, '10.10'
 
-pod 'PeerKit', :git => 'https://github.com/neonichu/PeerKit.git'
 pod 'Stargate', :path => '..'
 
 end

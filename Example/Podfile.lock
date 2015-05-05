@@ -8,19 +8,11 @@ PODS:
     - PeerKit (~> 1.1)
 
 DEPENDENCIES:
-  - PeerKit (from `https://github.com/neonichu/PeerKit.git`)
   - Stargate (from `..`)
 
 EXTERNAL SOURCES:
-  PeerKit:
-    :git: https://github.com/neonichu/PeerKit.git
   Stargate:
     :path: ..
-
-CHECKOUT OPTIONS:
-  PeerKit:
-    :commit: ca6ea0bda30afb4fdd563457bead54038a1ab56f
-    :git: https://github.com/neonichu/PeerKit.git
 
 SPEC CHECKSUMS:
   MMWormhole: 941cd168b4afd6073f883b82944d6eded4e00203
