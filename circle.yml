@@ -1,0 +1,12 @@
+machine:
+  environment:
+    LANG: en_US.UTF-8
+    XCODE_WORKSPACE: Example/StargateExample.xcworkspace
+    XCODE_SCHEME: Stargate
+  xcode:
+    version: "6.3.1"
+test:
+  override:
+    - pod lib lint Stargate.podspec
+    - make -C Example pod
+    - make -C Example all
