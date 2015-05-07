@@ -9,8 +9,10 @@
 import MultipeerConnectivity
 import PeerKit
 
+/// Closure for debug messages
 public typealias DebugHandler = (message: String) -> Void
 
+/// Base class, public because a public class can't inherit from an internal one.
 public class Base {
     private var applicationGroupIdentifier: String = ""
     var pingIdentifier = "274EAEF1-A178-47FE-81F4-96E87C242456"
@@ -19,24 +21,24 @@ public class Base {
         return applicationGroupIdentifier.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions.allZeros, range: nil).substringToIndex(advance(applicationGroupIdentifier.startIndex, 15))
     }
 
-    public init(applicationGroupIdentifier: String) {
+    init(applicationGroupIdentifier: String) {
         self.applicationGroupIdentifier = applicationGroupIdentifier
     }
 
-    public func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
+    func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
         fatalError("listenForMessage() needs to be overidden in subclasses.")
     }
 
-    public func passMessage(message: NSCoding, identifier: String) {
+    func passMessage(message: NSCoding, identifier: String) {
         fatalError("passMessageObject() needs to be overidden in subclasses.")
     }
 
-    public func sendMultipeerMessage(message: AnyObject, identifier: String) {
+    func sendMultipeerMessage(message: AnyObject, identifier: String) {
         let allPeers = PeerKit.session?.connectedPeers as? [MCPeerID]
         PeerKit.sendEvent(identifier, object: message, toPeers: allPeers)
     }
 
-    public func stopListeningForMessage(#identifier: String) {
+    func stopListeningForMessage(#identifier: String) {
         fatalError("stopListeningForMessage() needs to be overidden in subclasses.")
     }
 }
@@ -51,6 +53,7 @@ public class Abydos : Base {
     private var callback: DebugHandler?
     var wormhole: MMWormhole!
 
+    /// Create an initialized Stargate endpoint
     public override init(applicationGroupIdentifier: String) {
         super.init(applicationGroupIdentifier: applicationGroupIdentifier)
 
@@ -61,11 +64,13 @@ public class Abydos : Base {
         wormhole.passMessageObject(pingPayload, identifier: pingIdentifier)
     }
 
+    /// The closure argument will be called for all connecting peers and messages passing through.
     public func debug(callback: DebugHandler) {
         PeerKit.onConnect = { (me, you) -> Void in callback(message: "connect: \(me) <=> \(you)") }
         self.callback = callback
     }
 
+    /// Set up the tunneling from Mac => Watch
     public func tunnel() {
         PeerKit.transceive(sanitizedIdentifier)
         PeerKit.onEvent = { (peerID, event, object) -> Void in
@@ -81,6 +86,7 @@ public class Abydos : Base {
         //UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler() {}
     }
 
+    /// Set up tunneling from Watch => Mac for the given identifier
     public func tunnelReplies(#identifier: String) {
         wormhole.listenForMessageWithIdentifier(identifier) { (message) -> Void in
             if let message: AnyObject = message {
@@ -98,6 +104,7 @@ public class Abydos : Base {
 public class Atlantis : Base {
     var wormhole: MMWormhole!
 
+    /// Create an initialized Stargate endpoint
     public override init(applicationGroupIdentifier: String) {
         super.init(applicationGroupIdentifier: applicationGroupIdentifier)
 
@@ -105,18 +112,21 @@ public class Atlantis : Base {
         passMessage(pingPayload, identifier: pingIdentifier)
     }
 
+    /// Listen for messages with identifier, closure will be called for each.
     public override func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
         wormhole.listenForMessageWithIdentifier(identifier, listener: listener)
 
         WKInterfaceController.openParentApplication([NSObject : AnyObject](), reply: nil)
     }
 
+    /// Pass a message with the given identifier
     public override func passMessage(message: NSCoding, identifier: String) {
         wormhole.passMessageObject(message, identifier: identifier)
 
         WKInterfaceController.openParentApplication([NSObject : AnyObject](), reply: nil)
     }
 
+    /// Stop listening for messages with the given identifier
     public override func stopListeningForMessage(#identifier: String) {
         wormhole.stopListeningForMessageWithIdentifier(identifier)
     }
@@ -126,6 +136,7 @@ public class Atlantis : Base {
 
 /// Stargate endpoint to be used on the Mac
 public class Earth : Base {
+    /// Create an initialized Stargate endpoint
     public override init(applicationGroupIdentifier: String) {
         super.init(applicationGroupIdentifier: applicationGroupIdentifier)
 
@@ -133,16 +144,19 @@ public class Earth : Base {
         passMessage(pingPayload, identifier: pingIdentifier)
     }
 
+    /// Listen for messages with identifier, closure will be called for each.
     public override func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
         PeerKit.eventBlocks[identifier] = { (peerID, object) -> Void in
             listener(object)
         }
     }
 
+    /// Pass a message with the given identifier
     public override func passMessage(message: NSCoding, identifier: String) {
         sendMultipeerMessage(message, identifier: identifier)
     }
 
+    /// Stop listening for messages with the given identifier
     public override func stopListeningForMessage(#identifier: String) {
         PeerKit.stopTransceiving()
     }
