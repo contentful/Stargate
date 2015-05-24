@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Stargate"
-  s.version          = "0.0.1"
+  s.version          = "0.1.0"
   s.summary          = "A communication channel from your Mac to your watch."
   s.homepage         = "https://github.com/contentful-labs/Stargate/"
   s.social_media_url = 'https://twitter.com/contentful'

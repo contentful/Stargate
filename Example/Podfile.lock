@@ -3,7 +3,7 @@ PODS:
     - MMWormhole/Core (= 1.1.1)
   - MMWormhole/Core (1.1.1)
   - PeerKit (1.1.0)
-  - Stargate (0.0.1):
+  - Stargate (0.1.0):
     - MMWormhole (~> 1.1)
     - PeerKit (~> 1.1)
 
@@ -17,6 +17,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   MMWormhole: 941cd168b4afd6073f883b82944d6eded4e00203
   PeerKit: 7ab365c98a6b72211f280bfd51bae898b1f50f6f
-  Stargate: a484e5b3a633f7cc62353212b73b0d2b739eac63
+  Stargate: b705d9e625233bd0db07e7ff82678b534cbefb42
 
 COCOAPODS: 0.37.1
