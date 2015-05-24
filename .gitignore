@@ -19,6 +19,11 @@ compile_commands.json
 *.xccheckout
 xcuserdata
 .idea
+build
+
+## Carthage
+Carthage
+Stargate.framework.zip
 
 ## CocoaPods
 
