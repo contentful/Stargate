@@ -8,15 +8,24 @@ PODS:
     - PeerKit (~> 1.1)
 
 DEPENDENCIES:
+  - PeerKit (from `git@github.com:neonichu/PeerKit.git`, branch `swift2.0`)
   - Stargate (from `..`)
 
 EXTERNAL SOURCES:
+  PeerKit:
+    :branch: swift2.0
+    :git: git@github.com:neonichu/PeerKit.git
   Stargate:
     :path: ..
+
+CHECKOUT OPTIONS:
+  PeerKit:
+    :commit: 12f172bfac9ccfa83d039696285f1f0ea74d5a54
+    :git: git@github.com:neonichu/PeerKit.git
 
 SPEC CHECKSUMS:
   MMWormhole: 941cd168b4afd6073f883b82944d6eded4e00203
   PeerKit: 7ab365c98a6b72211f280bfd51bae898b1f50f6f
   Stargate: b705d9e625233bd0db07e7ff82678b534cbefb42
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.38.0.beta.1

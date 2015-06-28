@@ -30,7 +30,7 @@ class ViewController: NSViewController, NSTextViewDelegate {
         super.viewDidLoad()
 
         stargate.listenForMessage(identifier: "stargate2") { (object) -> Void in
-            println("Received message on Mac: \(object)")
+            print("Received message on Mac: \(object)")
         }
     }
 

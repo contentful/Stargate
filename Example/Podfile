@@ -5,6 +5,7 @@ target 'StargateApp' do
 platform :osx, '10.10'
 
 pod 'Stargate', :path => '..'
+pod 'PeerKit', :git => 'git@github.com:neonichu/PeerKit.git', :branch => 'swift2.0'
 
 end
 
@@ -13,6 +14,7 @@ target 'StargateExample' do
 platform :ios, '8.0'
 
 pod 'Stargate', :path => '..'
+pod 'PeerKit', :git => 'git@github.com:neonichu/PeerKit.git', :branch => 'swift2.0'
 
 end
 
@@ -21,5 +23,6 @@ target 'StargateExample WatchKit Extension' do
 platform :ios, '8.0'
 
 pod 'Stargate', :path => '..'
+pod 'PeerKit', :git => 'git@github.com:neonichu/PeerKit.git', :branch => 'swift2.0'
 
 end

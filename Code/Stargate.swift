@@ -18,14 +18,14 @@ public class Base {
     var pingIdentifier = "274EAEF1-A178-47FE-81F4-96E87C242456"
     var pingPayload = "ping"
     var sanitizedIdentifier: String {
-        return applicationGroupIdentifier.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions.allZeros, range: nil).substringToIndex(advance(applicationGroupIdentifier.startIndex, 15))
+        return applicationGroupIdentifier.stringByReplacingOccurrencesOfString(".", withString: "", options: NSStringCompareOptions(rawValue: 0), range: nil).substringToIndex(advance(applicationGroupIdentifier.startIndex, 15))
     }
 
     init(applicationGroupIdentifier: String) {
         self.applicationGroupIdentifier = applicationGroupIdentifier
     }
 
-    func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
+    func listenForMessage(identifier identifier: String, _ listener: ((AnyObject!) -> Void)) {
         fatalError("listenForMessage() needs to be overidden in subclasses.")
     }
 
@@ -34,11 +34,11 @@ public class Base {
     }
 
     func sendMultipeerMessage(message: AnyObject, identifier: String) {
-        let allPeers = PeerKit.session?.connectedPeers as? [MCPeerID]
+        let allPeers = PeerKit.session?.connectedPeers as [MCPeerID]?
         PeerKit.sendEvent(identifier, object: message, toPeers: allPeers)
     }
 
-    func stopListeningForMessage(#identifier: String) {
+    func stopListeningForMessage(identifier identifier: String) {
         fatalError("stopListeningForMessage() needs to be overidden in subclasses.")
     }
 }
@@ -87,7 +87,7 @@ public class Abydos : Base {
     }
 
     /// Set up tunneling from Watch => Mac for the given identifier
-    public func tunnelReplies(#identifier: String) {
+    public func tunnelReplies(identifier identifier: String) {
         wormhole.listenForMessageWithIdentifier(identifier) { (message) -> Void in
             if let message: AnyObject = message {
                 if let callback = self.callback {
@@ -101,6 +101,7 @@ public class Abydos : Base {
 }
 
 /// Stargate endpoint to be used on the ᴡᴀᴛᴄʜ
+@available(iOS 8.2, *)
 public class Atlantis : Base {
     var wormhole: MMWormhole!
 
@@ -113,7 +114,7 @@ public class Atlantis : Base {
     }
 
     /// Listen for messages with identifier, closure will be called for each.
-    public override func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
+    public override func listenForMessage(identifier identifier: String, _ listener: ((AnyObject!) -> Void)) {
         wormhole.listenForMessageWithIdentifier(identifier, listener: listener)
 
         WKInterfaceController.openParentApplication([NSObject : AnyObject](), reply: nil)
@@ -127,7 +128,7 @@ public class Atlantis : Base {
     }
 
     /// Stop listening for messages with the given identifier
-    public override func stopListeningForMessage(#identifier: String) {
+    public override func stopListeningForMessage(identifier identifier: String) {
         wormhole.stopListeningForMessageWithIdentifier(identifier)
     }
 }
@@ -145,7 +146,7 @@ public class Earth : Base {
     }
 
     /// Listen for messages with identifier, closure will be called for each.
-    public override func listenForMessage(#identifier: String, _ listener: ((AnyObject!) -> Void)) {
+    public override func listenForMessage(identifier identifier: String, _ listener: ((AnyObject!) -> Void)) {
         PeerKit.eventBlocks[identifier] = { (peerID, object) -> Void in
             listener(object)
         }
@@ -157,7 +158,7 @@ public class Earth : Base {
     }
 
     /// Stop listening for messages with the given identifier
-    public override func stopListeningForMessage(#identifier: String) {
+    public override func stopListeningForMessage(identifier identifier: String) {
         PeerKit.stopTransceiving()
     }
 }
